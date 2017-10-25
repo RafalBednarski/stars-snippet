@@ -1,0 +1,68 @@
+body {
+	background-color: #23EACf;
+}
+
+.star8 {
+	display: inline-block;
+	margin: 2em;
+	transform: rotate(22deg);
+	transition: background linear .3s;
+	color: black;
+}
+
+.star8:before {
+	background-color: #fff;
+	content: "";
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	transform: rotate(45deg);
+}
+
+.star8, .star8:before, i.fa {
+	width: 80px;
+	height:80px;
+}
+
+.gold, .gold:before {
+	border: 6px solid #ffc107;
+}
+
+.orange, .orange:before {
+	border: 6px solid #fd7e33;
+}
+
+.blue, .blue:before {
+	border: 6px solid #3fb0ac;
+}
+
+i.fa {
+	margin: 0;
+	position: absolute;
+	background-color: #fff;
+	font-size: 60px;
+}
+
+i.fa:before {
+	position: absolute;
+	margin: 10px;
+	transform: rotate(-22deg);
+}
+
+.gold:hover:before, .gold:hover, .gold:hover i.fa {
+	background-color: #ffc107;
+}
+
+.orange:hover:before, .orange:hover, .orange:hover i.fa {
+	background-color: #fd7e33;
+}
+
+.blue:hover:before, .blue:hover, .blue:hover i.fa {
+	background-color: #3fb0ac;
+}
+
+.star8:hover:before, .star8:hover, .star8:hover i.fa {
+	color: #fff;
+	transition: ease-in-out .3s;
+}
+
